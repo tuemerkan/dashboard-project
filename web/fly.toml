@@ -1,3 +1,4 @@
+app="dashboard-project"
 [env]
 PORT = "8081"
 HOST = "https://dashboard-project.fly.dev"
