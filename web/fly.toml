@@ -1,0 +1,7 @@
+[env]
+PORT = "8081"
+HOST = "https://dashboard-project.fly.dev"
+SHOPIFY_API_KEY = "7f0091412fbaa638c581d24c8b98da4c"
+SCOPES = "write_products"
+[http_service]
+internal_port = 8081
