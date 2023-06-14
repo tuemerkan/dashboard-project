@@ -1,15 +1,18 @@
-# fly.toml app configuration file generated for dashboard-project on 2023-06-14T02:09:35+02:00
+# fly.toml app configuration file generated for dashboard-project on 2023-06-14T02:15:00+02:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
 app = "dashboard-project"
 primary_region = "ams"
+
 [env]
-  PORT = "8081"
   HOST = "https://dashboard-project.fly.dev"
-  SHOPIFY_API_KEY = "7f0091412fbaa638c581d24c8b98da4c"
+  PORT = "8081"
   SCOPES = "write_products"
+  SHOPIFY_API_KEY = "7f0091412fbaa638c581d24c8b98da4c"
+  NODE_ENV = "production"
+
 [http_service]
   internal_port = 8081
   force_https = true
